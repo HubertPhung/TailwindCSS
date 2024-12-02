@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.7.1-web/css/all.css">
+</head>
+<body>
+    <div id="main">
+        <!-- Navigation Bar -->
+        <div class="header fixed top-0 left-0 right-0 h-[75px] w-auto bg-white shadow-md flex items-center justify-between px-32">
+            <!-- Logo -->
+            <div class="logo flex items-center space-x-2">
+                <img src="./img/logo.jpg" alt="logo" class="h-10 w-10">
+                <h3 class="text-xl font-semibold text-green-600">Candleaf</h3>
+            </div>
+            <!-- Navigation Menu -->
+            <ul class="nav flex items-center space-x-8 text-gray-700 font-medium">
+                <li>
+                    <a href="#" class="hover:text-gray-900 flex items-center space-x-1">
+                        <span>Discovery</span>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                </li>
+                <li><a href="#" class="hover:text-gray-900">About</a></li>
+                <li><a href="#" class="hover:text-gray-900">Contact us</a></li>
+            </ul>
+           <!-- Icons -->
+            <div class="flex items-center space-x-6">
+                <!-- User Icon -->
+                <button class="p-2 rounded-full hover:bg-gray-100">
+                    <i class="fa fa-user-circle text-xl text-gray-700 hover:text-gray-900"></i>
+                </button>
+                <!-- Cart Icon -->
+                <button class="p-2 rounded-full hover:bg-gray-100">
+                    <i class="fa fa-cart-plus text-xl text-gray-700 hover:text-gray-900"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Main Content -->
+        <div class="content flex flex-col items-center py-32">
+            <!-- Title -->
+            <h1 class="text-3xl text-gray-800 pb-6">Your cart items</h1>
+            <a href="#" class="text-green-600 hover:underline pb-8">Back to shopping</a>
+
+            <!-- Product List -->
+            <div class="product-list w-3/4 overflow-hidden">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class=" text-gray-700 font-semibold">
+                            <th class="px-4 py-3">Product</th>
+                            <th class="px-4 py-3">Price</th>
+                            <th class="px-4 py-3">Quantity</th>
+                            <th class="px-4 py-3">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Product Row -->
+                        <tr class="product-row border-t">
+                            <td class="px-4 py-4 flex items-center space-x-4 mt-8">
+                                <img src="./img/Tra sua tran chau hoang kim.png" alt="Product" class="h-16 w-16 object-cover rounded">
+                                <div class="flex flex-col">
+                                    <span>Spiced Mint Candleaf®</span>
+                                    <a href="#" class="text-green-600 text-sm hover:underline">Remove</a>
+                                </div>
+                            </td>
+                            <td class="px-4 py-4 mt-8">$9.99</td>
+                            <td class="px-4 py-4 mt-8">
+                                <div class="flex items-center space-x-2 ">
+                                    <button class="p-2 bg-gray-100 hover:bg-gray-200">-</button>
+                                    <span class="font-medium">1</span>
+                                    <button class="p-2 bg-gray-100 hover:bg-gray-200">+</button>
+                                </div>
+                            </td>
+                            <td class="px-4 py-4 mt-8">$9.99</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Subtotal and Checkout -->
+            <div class="subtotal w-3/4 mt-8 border-t pt-6 flex justify-end items-center space-x-8">
+                <!-- Sub-total -->
+                <div class="text-right">
+                    <div class="flex items-center justify-end space-x-2">
+                        <span class="text-gray-700 font-medium">Sub-total:</span>
+                        <span class="text-gray-800 font-semibold">$9.99</span>
+                    </div>
+                    <p class="text-sm text-gray-500">Tax and shipping cost will be calculated later</p>
+                </div>
+
+                <!-- Check-out Button -->
+                <button class="py-3 px-6 bg-green-600 text-white font-semibold rounded hover:bg-green-700">
+                    Check-out
+                </button>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="bg-gray-900 text-white py-8">
+            <div class="container mx-auto px-6">
+                <div class="border-t border-gray-700 mb-8"></div>
+        
+                <div class="flex flex-col md:flex-row justify-between items-center md:items-start space-y-8 md:space-y-0">
+                    <!-- Logo and Brand Name -->
+                    <div class="flex items-center space-x-4 text-center md:text-left">
+                        <!-- Logo Image -->
+                        <img src="./img/logo-footer.jpg" alt="Candleaf Logo" class="h-16 mx-auto md:mx-0 rounded-full">
+                        <!-- Brand Name and Description -->
+                        <div>
+                            <h1 class="font-bold text-3xl text-white">Candleaf</h1>
+                            <p class="text-gray-400 text-sm">Your natural candle made for</p>
+                            <p class="text-gray-400 text-sm">your home and for your wellness.</p>
+                        </div>
+                    </div>
+        
+                    <!-- Navigation Links -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                        <!-- Discovery -->
+                        <div>
+                            <h4 class="text-green-500 font-semibold mb-4">Discovery</h4>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-gray-400 hover:text-white">New season</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white">Most searched</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white">Most selled</a></li>
+                            </ul>
+                        </div>
+        
+                        <!-- About -->
+                        <div>
+                            <h4 class="text-green-500 font-semibold mb-4">About</h4>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-gray-400 hover:text-white">Help</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white">Shipping</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white">Affiliate</a></li>
+                            </ul>
+                        </div>
+        
+                        <!-- Info -->
+                        <div>
+                            <h4 class="text-green-500 font-semibold mb-4">Info</h4>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="text-gray-400 hover:text-white">Contact us</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policies</a></li>
+                                <li><a href="#" class="text-gray-400 hover:text-white">Terms & Conditions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        
+        
+        
+</body>
+</html>
