@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.7.1-web/css/all.css">
+    <title>Product-admin</title>
+</head> 
+<body>  
+   <div class="product-admin">
+        <div class="flex h-screen">
+            <!-- Sidebar -->
+            <div class="w-64 bg-green-200 border-spacing-1 border-gray-300 rounded-r-2xl">
+              <!-- Logo -->
+              <div class="p-4 ml-2 flex items-center border-b border-green-200">
+                <img 
+                  src="./img/logo.jpg" 
+                  alt="Logo" 
+                  class="w-10 h-10 rounded-full"
+                />
+                <span class="ml-2 font-bold text-green-600 font-serif">Admin</span>
+              </div>
+              <!-- Navigation -->
+              <ul class="px-4 py-8 h-full space-y-2 text-gray-700 font-serif bg-green-100">
+                <li>
+                  <a href="#" class="flex items-center p-4 rounded-lg hover:bg-white hover:text-green-400">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="ml-3">Overview</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center p-4 rounded-lg hover:bg-white hover:text-green-400">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <span class="ml-3">Product</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center p-4 rounded-lg hover:bg-white hover:text-green-400">
+                    <i class="fa-solid fa-bell-concierge"></i>
+                    <span class="ml-3">Customer</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center p-4 rounded-lg hover:bg-white hover:text-green-400">
+                    <i class="fa-solid fa-gears"></i>
+                    <span class="ml-3">Setting</span>
+                  </a>
+                </li>
+              </ul>
+            </div>   
+            <!-- Main Content -->
+            <div class="flex-1 bg-gray-50 p-6">
+                <!-- title -->
+                <h1 class="title text-center font-bold text-3xl text-green-600">Product List</h1>
+                  <!-- search bar -->
+                  <div class="flex justify-between items-center py-4">
+                      <input
+                      type="text"
+                      placeholder="Search...."
+                      class="border border-gray-300 rounded-lg px-4 py-2 w-1/3 "
+                      />
+                  </div>
+                  <!-- title table -->
+                  <div class="overflow-hidden rounded-lg border-spacing-1 border-gray-300 text-xs">
+                      <table class="w-full text-left">
+                      <thead>
+                          <tr class="bg-gray-100 text-gray-400">
+                          <th class="px-4 py-2 flex items-center">
+                              <input 
+                              type="checkbox" 
+                              class="mr-2 my-2 accent-red-950"
+                              id="select-all"
+                              />
+                              <label for="select-all" class="cursor-pointer ml-4">Product</label>
+                          </th>
+                          <th class="px-4 py-2">Category</th>
+                          <th class="px-4 py-2">Price</th>
+                          <th class="px-4 py-2">Quantity</th>
+                          <th class="px-4 py-2">Delete edit</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <!-- produc 1 -->
+                          <tr class="hover:bg-yellow-50">
+                            <td class=" px-4 py-2 flex items-center space-x-4">
+                                <input type="checkbox" class="mr-2 accent-red-950 select-item"/>
+                                <img 
+                                src="./img/Tra sua tran chau hoang kim.png" 
+                                alt="Product Image" 
+                                class="w-10 h-10 rounded-lg object-cover"
+                                />
+                                <label for="select-item" class="flex-grow cursor-pointer">Spiced Mint Candleaf®</label>
+                        
+                            </td>
+                            <td class=" px-4 py-2">Drink</td>
+                            <td class=" px-4 py-2">30.000đ</td>
+                            <td class=" px-4 py-2">-</td>
+                            <td class=" px-4 py-2">
+                                <button class="text-blue-600 hover:underline mr-2">Edit</button>
+                                <button class="text-red-600 hover:underline">Delete</button>
+                            </td>
+                          </tr>
+                          <!-- produc 2 -->
+                          <tr class="hover:bg-yellow-50">
+                            <td class=" px-4 py-2 flex items-center space-x-4">
+                                <input type="checkbox" class="mr-2 accent-red-950 select-item"/>
+                                <img 
+                                src="./img/Tra sua tran chau hoang kim.png" 
+                                alt="Product Image" 
+                                class="w-10 h-10 rounded-lg object-cover"
+                                />
+                                <label for="select-item" class="flex-grow cursor-pointer">Spiced Mint Candleaf®</label>
+                        
+                            </td>
+                            <td class=" px-4 py-2">Drink</td>
+                            <td class=" px-4 py-2">30.000đ</td>
+                            <td class=" px-4 py-2">-</td>
+                            <td class=" px-4 py-2">
+                                <button class="text-blue-600 hover:underline mr-2">Edit</button>
+                                <button class="text-red-600 hover:underline">Delete</button>
+                            </td>
+                          </tr>
+                          <!-- produc 3 -->
+                          <tr class="hover:bg-yellow-50">
+                            <td class=" px-4 py-2 flex items-center space-x-4">
+                                <input type="checkbox" class="mr-2 accent-red-950 select-item"/>
+                                <img 
+                                src="./img/Tra sua tran chau hoang kim.png" 
+                                alt="Product Image" 
+                                class="w-10 h-10 rounded-lg object-cover"
+                                />
+                                <label for="select-item" class="flex-grow cursor-pointer">Spiced Mint Candleaf®</label>
+                        
+                            </td>
+                            <td class=" px-4 py-2">Drink</td>
+                            <td class=" px-4 py-2">30.000đ</td>
+                            <td class=" px-4 py-2">-</td>
+                            <td class=" px-4 py-2">
+                                <button class="text-blue-600 hover:underline mr-2">Edit</button>
+                                <button class="text-red-600 hover:underline">Delete</button>
+                            </td>
+                          </tr>
+                          <!-- produc 4 -->
+                          <tr class="hover:bg-yellow-50">
+                            <td class=" px-4 py-2 flex items-center space-x-4">
+                                <input type="checkbox" class="mr-2 accent-red-950 select-item" />
+                                <img 
+                                src="./img/Tra sua tran chau hoang kim.png" 
+                                alt="Product Image" 
+                                class="w-10 h-10 rounded-lg object-cover"
+                                />
+                                <label for="select-item" class="flex-grow cursor-pointer">Spiced Mint Candleaf®</label>
+                        
+                            </td>
+                            <td class=" px-4 py-2">Drink</td>
+                            <td class=" px-4 py-2">30.000đ</td>
+                            <td class=" px-4 py-2">-</td>
+                            <td class=" px-4 py-2">
+                                <button class="text-blue-600 hover:underline mr-2">Edit</button>
+                                <button class="text-red-600 hover:underline">Delete</button>
+                            </td>
+                          </tr>
+                          <!-- produc 5 -->
+                          <tr class="hover:bg-yellow-50">
+                            <td class=" px-4 py-2 flex items-center space-x-4">
+                                <input type="checkbox" class="mr-2 accent-red-950 select-item"  id="select"/>
+                                <img 
+                                src="./img/Tra sua tran chau hoang kim.png" 
+                                alt="Product Image" 
+                                class="w-10 h-10 rounded-lg object-cover"
+                                />
+                                <label for="select-item" class="flex-grow cursor-pointer">Spiced Mint Candleaf®</label>
+                        
+                            </td>
+                            <td class=" px-4 py-2">Drink</td>
+                            <td class=" px-4 py-2">30.000đ</td>
+                            <td class=" px-4 py-2">-</td>
+                            <td class=" px-4 py-2">
+                                <button class="text-blue-600 hover:underline mr-2">Edit</button>
+                                <button class="text-red-600 hover:underline">Delete</button>
+                            </td>
+                          </tr>
+                          <!-- produc 6 -->
+                          <tr class="hover:bg-yellow-50">
+                            <td class=" px-4 py-2 flex items-center space-x-4">
+                                <input type="checkbox" class="mr-2 accent-red-950 select-item"/>
+                                <img 
+                                src="./img/Tra sua tran chau hoang kim.png" 
+                                alt="Product Image" 
+                                class="w-10 h-10 rounded-lg object-cover"
+                                />
+                                <label for="select-item" class="flex-grow cursor-pointer">Spiced Mint Candleaf®</label>
+                        
+                            </td>
+                            <td class=" px-4 py-2">Drink</td>
+                            <td class=" px-4 py-2">30.000đ</td>
+                            <td class=" px-4 py-2">-</td>
+                            <td class=" px-4 py-2">
+                                <button class="text-blue-600 hover:underline mr-2">Edit</button>
+                                <button class="text-red-600 hover:underline">Delete</button>
+                            </td>
+                          </tr>
+                          
+                      </tbody>
+                      </table>
+                  </div>        
+          </div>          
+     </div>     
+</body>
+</html>
